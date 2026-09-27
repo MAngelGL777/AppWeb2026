@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html Lang=”es”>
+<head>
+	<meta charset="UTF-8">
+	<title>Administrador de pedidos</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fondo">
+	<header>
+		<h1>Estado del pedido   
+            <img src="https://tinyurl.com/IconoEstadoPedido" alt="Logo de la empresa" class="logo">
+        </h1>
+		<nav class="menu">
+			<u1>
+				<l1><a href="#inicio">Inicio</a></l1>
+				<l1><a href="#contacto">Contacto</a><l1>
+                <l1><a href="#pedidos">Pedidos</a><l1>
+			</u1>
+		</nav>
+	</header>	
+
+	<main>
+		<section>
+			<h2>Pedido N° 12345</h2>
+			<article class="box">
+				<h3>Nombre del articulo: Articulo de ejemplo</h3>	
+				<p>Descripcion del articulo: Este es un articulo de ejemplo para demostrar la funcionalidad del sistema.</p>
+				<img src="https://tinyurl.com/8ecxb3hc">
+                <p>Cantidad: 5</p>
+                <p>Precio unitario: $100</p>
+                <p>Total: $500</p>
+                <p>Fecha de pedido: 01/01/2026</p>
+                <p>Fecha estimada de entrega: 15/01/2026</p>
+                <p>Cliente: Juan Perez</p>
+                <p>Dirección de entrega: Calle Falsa 123, Ciudad, País</p>
+			</article>
+            <article class="estado">
+                <h3>Estado del pedido N° 12345</h3>
+                <p>El estado actual del pedido es: <strong>En fabricación</strong></p>
+                <form id="estadoForm">
+                    <label for="estado">Actualizar estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="orden recibida">Orden recibida</option>
+                        <option value="en fabricación">En fabricación</option>
+                        <option value="control de calidad">Control de calidad</option>
+                        <option value="empaquetado">Empaquetado</option>
+                        <option value="en tránsito">En tránsito</option>
+                    </select>
+                    <button type="submit">Actualizar</button>
+                </form>
+            </article>
+		</section>
+	</main>
+
+	<footer class="descripcion">
+		<p>&copy; 2026 Todos los derechos reservados. </p>
+        <p>Nombre del Requerimiento: Actualizacion de estatus</p>
+        <p>Autor: Miguel Angel Guerrero Lopez</p>
+        <p>Fecha de creación: 27/06/2026</p>
+        <p>Descripción: El sistema debe permitir al supervisor de planta actualizar el estado del pedido entre las etapas definidas (orden recibida, en fabricación, control de calidad, empaquetado, en tránsito).</p>
+	</footer>
+</body>
+</html>
