@@ -1,41 +1,84 @@
-h1{
-    color: #000000;
-    font-size: 64px;
-    font-family: ROBOTO, sans-serif;
-    text-align: center;
+:root {
+  /* Colores */
+  --color-texto: #1e293b;
+  --color-primario: #10b981;
+  --color-fondo: #f8fafc;
+  --color-caja: #f68586;
+  --color-estado: #4f9ed6;
+  --color-descripcion: #4fd6a1;
+
+  /* Tipografía */
+  --fuente-base: 'Roboto', sans-serif;
+  --h1-size: 64px;
+
+  /* Bordes y espaciados */
+  --radio-borde: 10px;
+  --borde-grosor: 5px;
+  --espacio: 10px;
+  --ancho-caja: 575px;
 }
-.logo{
-    width: 100px;
-    height: 100px;
+
+body.fondo {
+  background-color: var(--color-fondo);
 }
-.menu{
-    background-color: #61815b;
-    padding: 10px;
-    color: #000000;
-    text-align: center;
-    font-family: ROBOTO, sans-serif;
+
+h1 {
+  color: var(--color-texto);
+  font-size: var(--h1-size);
+  font-family: var(--fuente-base);
+  text-align: center;
 }
-.box{
-    width: 575px;
-    padding: 15px;
-    border: 5px solid #000000;
-    margin: 25px;
-    background-color: #d64fb0;
+
+.logo {
+  width: 100px;
+  height: 100px;
 }
-.fondo{
-    background-color: #d65a4f;
+
+.menu {
+  background-color: var(--color-primario);
+  padding: var(--espacio);
+  color: var(--color-texto);
+  text-align: center;
+  font-family: var(--fuente-base);
 }
-.estado{
-    background-color: #4f9ed6;
-    padding: 10px;
-    color: #000000;
-    text-align: center;
-    font-family: ROBOTO, sans-serif;
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
-.descripcion{
-    background-color: #4fd6a1;
-    padding: 10px;
-    color: #000000;
-    text-align: center;
-    font-family: ROBOTO, sans-serif;
+
+.menu a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.box {
+  width: var(--ancho-caja);
+  max-width: 100%;
+  padding: 15px;
+  border: var(--borde-grosor) solid var(--color-texto);
+  margin: 25px auto;
+  background-color: var(--color-caja);
+  border-radius: var(--radio-borde);
+}
+
+.estado {
+  background-color: var(--color-estado);
+  padding: var(--espacio);
+  color: var(--color-texto);
+  text-align: center;
+  font-family: var(--fuente-base);
+}
+
+.descripcion {
+  background-color: var(--color-descripcion);
+  padding: var(--espacio);
+  color: var(--color-texto);
+  text-align: center;
+  font-family: var(--fuente-base);
 }
